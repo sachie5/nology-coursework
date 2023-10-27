@@ -3,11 +3,12 @@
 $font-body:"Roboto" , sans-serif;
 
 * {
-    display: flexbox;
+    display: block;
     margin: 0;
     padding: 0;
     background-color: white;
     font-family: $font-body;
+    flex-direction: column;
 }
 
 a:link,
@@ -50,7 +51,7 @@ h1, h2, h3{
 
 h1 {
     font-size: 40px;
-    text-decoration: solid;
+    font-weight: 400px;
 }
 
 h1, h3 {
@@ -59,6 +60,7 @@ h1, h3 {
 
 h2, p {
     color:#394166;
+    padding: 6px;
 }
 
 h2, h3 {
@@ -67,8 +69,26 @@ h2, h3 {
 
 .button {
     width: 250px;
+    height: 50px;
+    border-radius: 6px;
+    border-width: 2px;
+    font-size: 18px;
+    background-color: #394166;
+    color: white;
+    align-items: center;
+    text-align: justify;
 }
 
-#signup {
-    justify-content: center;
+h4 {
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+    font-weight: 400px;
+    color: #394166;
 }
+
+span{
+    font-weight: 400px;
+}
+
+
