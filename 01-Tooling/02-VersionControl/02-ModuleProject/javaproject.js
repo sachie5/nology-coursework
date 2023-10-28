@@ -35,3 +35,21 @@ convertDaysToAge (7482);
  getLargestNumber (2, 9, 10);
  getLargestNumber (434, 942, 882);
  getLargestNumber (2973, 9812, 9182);
+
+ /**Write a function that takes an array of names and returns 
+  * the last name from the array of names */
+
+
+ const getLastName = (names) => {
+    for(let i = 0; i < names.length; i++){
+        if (i === names.length - 1){
+            return names[i];
+        }
+    }
+}
+
+let lastName = getLastName(["Charlie", "Rob", "Andy"]);
+console.log(lastName);
+
+lastName = getLastName(["Ash", "Stu"]);
+console.log(lastName);

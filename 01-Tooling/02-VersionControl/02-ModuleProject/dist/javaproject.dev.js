@@ -35,3 +35,18 @@ var getLargestNumber = function getLargestNumber(num1, num2, num3) {
 getLargestNumber(2, 9, 10);
 getLargestNumber(434, 942, 882);
 getLargestNumber(2973, 9812, 9182);
+/**Write a function that takes an array of names and returns 
+ * the last name from the array of names */
+
+var getLastName = function getLastName(names) {
+  for (var i = 0; i < names.length; i++) {
+    if (i === names.length - 1) {
+      return names[i];
+    }
+  }
+};
+
+var lastName = getLastName(["Charlie", "Rob", "Andy"]);
+console.log(lastName);
+lastName = getLastName(["Ash", "Stu"]);
+console.log(lastName);
