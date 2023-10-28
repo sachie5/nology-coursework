@@ -53,3 +53,21 @@ console.log(lastName);
 
 lastName = getLastName(["Ash", "Stu"]);
 console.log(lastName);
+
+/** Write a function that takes an array 
+ * of numbers and returns true if all of the numbers 
+ * are positive. It should return false if there are one or 
+ * more negative numbers in the array.*/
+
+const allNumbersPositive = (numbers) => {
+    for(let i = 0; i < numbers.length; i++){
+        if(numbers[i] < 0){
+            return false;
+        } else {
+            return true;
+        }
+    }
+}
+
+console.log(allNumbersPositive([2, 4, 5]));
+console.log(allNumbersPositive([-5, 4, 6]));
