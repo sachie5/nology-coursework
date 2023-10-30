@@ -2,28 +2,32 @@
 
 $font-body:"Roboto" , sans-serif;
 
-* {
-    display: block;
+* { 
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: white;
     font-family: $font-body;
-    flex-direction: column;
+
 }
 
 a:link,
 a:visited {
+    background-color: transparent;
     text-decoration: none;
     font-weight: bold;
 }
 
-header {
-    justify-content: space-between;
+.longbutton {
+    color: white;
+    font-weight: 300px;
 }
 
-nav {
+header {
     height: 200px;
+    padding: 50px;
 }
+
 
 #login{
     width: 100px;
@@ -34,6 +38,8 @@ nav {
     border-width: 2px;
     font-size: 18px;
     color: #394166;
+    float: right;
+    
 }
 
 #login-link:link {
@@ -41,9 +47,9 @@ nav {
     padding: 10px;
 }
 
- #homepage{
+main {
     text-align: center;
- }
+}
 
 h1, h2, h3{
         padding: 25px;
@@ -60,11 +66,16 @@ h1, h3 {
 
 h2, p {
     color:#394166;
-    padding: 6px;
+    padding: 10px;
 }
 
 h2, h3 {
     font-size: 25px;
+}
+
+.intro {
+    font-size: 20px;
+    padding-bottom: 30px;
 }
 
 .button {
@@ -74,21 +85,60 @@ h2, h3 {
     border-width: 2px;
     font-size: 18px;
     background-color: #394166;
-    color: white;
-    align-items: center;
-    text-align: justify;
+    text-align: center;
 }
 
 h4 {
     text-align: center;
-    padding: 50px;
+    padding: 80px 0 0 0;
     font-size: 25px;
     font-weight: 400px;
     color: #394166;
 }
 
-span{
-    font-weight: 400px;
+.positives {
+    display: inline-flex;
+    padding: 50px;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.activity {
+    font-size: 26px;
+    text-align: left;
+}
 
+img {
+    width: 33%;
+}
+
+ .bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-syle: italic;
+}
+
+.signup {
+    padding: 40px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #FFFACD;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    background-color: #FFFACD;
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #FFFACD;
+}
