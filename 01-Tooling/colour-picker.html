@@ -1,39 +1,42 @@
-//** CSS Grid Color Picker
 
-Create a small web application that features a 10x10 grid of tiles. Users will be able to select a color using the HTML color picker element, and when they click on a tile within the grid, the background color of the tile should change to the selected color.
-
-- Create an HTML file with a container element that will hold the grid and the color picker. 
-- Include an HTML color picker input element within the container.
-- Reasearch CSS Grid and use it to create a 10x10 grid of square div tiles within the grid container. 
-- Give the tiles a border to ensure the grid is clear.
-- Write JavaScript code to handle the following functionality:
-  - When a user selects a color using the color picker, the selected color should be stored in a variable.
-  - When a user clicks on a tile within the grid, the background color of the clicked tile should change to the currently selected color.
-  - Provide visual feedback to indicate which color is currently selected.
-
-The Project should have its own Github Repository and should uses SCSS for styling. */
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--CSS Grid Color Picker
+
+    Create a small web application that features a 10x10 grid of tiles.
+     Users will be able to select a color using the HTML color picker element, and when they click on a tile within the grid, the background color of the tile should change to the selected color.
+    
+    - Create an HTML file with a container element that will hold the grid and the color picker. 
+    - Include an HTML color picker input element within the container.
+    - Reasearch CSS Grid and use it to create a 10x10 grid of square div tiles within the grid container. 
+    - Give the tiles a border to ensure the grid is clear.
+    - Write JavaScript code to handle the following functionality:
+      - When a user selects a color using the color picker, the selected color should be stored in a variable.
+      - When a user clicks on a tile within the grid, the background color of the clicked tile should change to the currently selected color.
+      - Provide visual feedback to indicate which color is currently selected.
+    
+    The Project should have its own Github Repository and should uses SCSS for styling.--> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="picker.css" />
+    <link src="/script.js">
     <title>Grid Colour Picker</title>
 </head>
 <body>
     <div class="container">
-        <label><input type="text"></label>
-        <div class="red">red</div>
-        <div class="yellow">yellow</div>
-        <div class="green">green</div>
-        <div class="orange">orange</div>
-        <div class="purple">purple</div>
-        <div class="navy">navy</div>
-        <div class="pink">pink</div>
-        <div class="black">black</div>
-        <div class="brown">brown</div>
-        <div class="white">white</div>
+        <div class="colour" id="red"></div>
+        <div class="colour" id="yellow"></div>
+        <div class="colour" id="green"></div>
+        <div class="colour" id="orange"></div>
+        <div class="colour" id="input"><input type="color" id="colour-picker"><button>Choose a colour</button></div>
+        <div class="colour" id="purple"></div>
+        <div class="colour" id="navy"></div>
+        <div class="colour" id="pink"></div>
+        <div class="colour" id="black"></div>
+        <div class="colour" id="brown"></div>
+        <div class="colour" id="white"></div>
     </div>
     
 </body>
