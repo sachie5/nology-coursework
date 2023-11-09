@@ -31,7 +31,12 @@ main{
 }
 
 img{
-    width: 56em;
+    display:block;
+    height: auto;
+    max-width: 100%;
+    justify-content: center;
+    align-items:center;
+    
 }
 
 #img-caption {
