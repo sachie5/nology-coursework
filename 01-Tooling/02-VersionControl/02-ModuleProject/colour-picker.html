@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--CSS Grid Color Picker
+
+    Create a small web application that features a 10x10 grid of tiles.
+     Users will be able to select a color using the HTML color picker element, and when they click on a tile within the grid, the background color of the tile should change to the selected color.
+    
+    - Create an HTML file with a container element that will hold the grid and the color picker. 
+    - Include an HTML color picker input element within the container.
+    - Reasearch CSS Grid and use it to create a 10x10 grid of square div tiles within the grid container. 
+    - Give the tiles a border to ensure the grid is clear.
+    - Write JavaScript code to handle the following functionality:
+      - When a user selects a color using the color picker, the selected color should be stored in a variable.
+      - When a user clicks on a tile within the grid, the background color of the clicked tile should change to the currently selected color.
+      - Provide visual feedback to indicate which color is currently selected.
+    
+    The Project should have its own Github Repository and should uses SCSS for styling.--> 
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="picker.css" />
+    <link src="/script.js">
+    <title>Grid Colour Picker</title>
+</head>
+<body>
+    <input type="color" id="colour-picker">
+    <div class="container">
+        <div class="colour" id="1" onclick="changeColour(this)"></div>
+        <div class="colour" id="2" onclick="changeColour(this)"></div>
+        <div class="colour" id="3" onclick="changeColour(this)"></div>
+        <div class="colour" id="4" onclick="changeColour(this)"></div>
+        <div class="colour" id="5" onclick="changeColour(this)"></div>
+        <div class="colour" id="6" onclick="changeColour(this)"></div>
+        <div class="colour" id="7" onclick="changeColour(this)"></div>
+        <div class="colour" id="8" onclick="changeColour(this)"></div>
+        <div class="colour" id="9" onclick="changeColour(this)"></div>
+        <div class="colour" id="10" onclick="changeColour(this)"></div>
+        <div class="colour" id="11" onclick="changeColour(this)"></div>
+        <div class="colour" id="12" onclick="changeColour(this)"></div>
+        <div class="colour" id="13" onclick="changeColour(this)"></div>
+        <div class="colour" id="14" onclick="changeColour(this)"></div>
+        <div class="colour" id="15" onclick="changeColour(this)"></div>
+        <div class="colour" id="16" onclick="changeColour(this)"></div>
+        <div class="colour" id="17" onclick="changeColour(this)"></div>
+        <div class="colour" id="18" onclick="changeColour(this)"></div>
+        <div class="colour" id="19" onclick="changeColour(this)"></div>
+        <div class="colour" id="20" onclick="changeColour(this)"></div>
+        <div class="colour" id="21" onclick="changeColour(this)"></div>
+        <div class="colour" id="22" onclick="changeColour(this)"></div>
+        <div class="colour" id="23" onclick="changeColour(this)"></div>
+        <div class="colour" id="24" onclick="changeColour(this)"></div>
+        <div class="colour" id="25" onclick="changeColour(this)"></div>
+        <div class="colour" id="26" onclick="changeColour(this)"></div>
+        <div class="colour" id="27" onclick="changeColour(this)"></div>
+        <div class="colour" id="28" onclick="changeColour(this)"></div>
+        <div class="colour" id="29" onclick="changeColour(this)"></div>
+        <div class="colour" id="30" onclick="changeColour(this)"></div>
+        <div class="colour" id="31" onclick="changeColour(this)"></div>
+        <div class="colour" id="32" onclick="changeColour(this)"></div>
+        <div class="colour" id="33" onclick="changeColour(this)"></div>
+        <div class="colour" id="34" onclick="changeColour(this)"></div>
+        <div class="colour" id="35" onclick="changeColour(this)"></div>
+        <div class="colour" id="36" onclick="changeColour(this)"></div>
+        <div class="colour" id="37" onclick="changeColour(this)"></div>
+        <div class="colour" id="38" onclick="changeColour(this)"></div>
+        <div class="colour" id="39" onclick="changeColour(this)"></div>
+        <div class="colour" id="40" onclick="changeColour(this)"></div>
+        <div class="colour" id="41" onclick="changeColour(this)"></div>
+        <div class="colour" id="42" onclick="changeColour(this)"></div>
+        <div class="colour" id="43" onclick="changeColour(this)"></div>
+        <div class="colour" id="44" onclick="changeColour(this)"></div>
+        <div class="colour" id="45" onclick="changeColour(this)"></div>
+        <div class="colour" id="46" onclick="changeColour(this)"></div>
+        <div class="colour" id="47" onclick="changeColour(this)"></div>
+        <div class="colour" id="48" onclick="changeColour(this)"></div>
+        <div class="colour" id="49" onclick="changeColour(this)"></div>
+        <div class="colour" id="50" onclick="changeColour(this)"></div>
+        <div class="colour" id="51" onclick="changeColour(this)"></div>
+        <div class="colour" id="52" onclick="changeColour(this)"></div>
+        <div class="colour" id="53" onclick="changeColour(this)"></div>
+        <div class="colour" id="54" onclick="changeColour(this)"></div>
+        <div class="colour" id="55" onclick="changeColour(this)"></div>
+        <div class="colour" id="56" onclick="changeColour(this)"></div>
+        <div class="colour" id="57" onclick="changeColour(this)"></div>
+        <div class="colour" id="58" onclick="changeColour(this)"></div>
+        <div class="colour" id="59" onclick="changeColour(this)"></div>
+        <div class="colour" id="60" onclick="changeColour(this)"></div>
+        <div class="colour" id="61" onclick="changeColour(this)"></div>
+        <div class="colour" id="62" onclick="changeColour(this)"></div>
+        <div class="colour" id="63" onclick="changeColour(this)"></div>
+        <div class="colour" id="64" onclick="changeColour(this)"></div>
+        <div class="colour" id="65" onclick="changeColour(this)"></div>
+        <div class="colour" id="66" onclick="changeColour(this)"></div>
+        <div class="colour" id="67" onclick="changeColour(this)"></div>
+        <div class="colour" id="68" onclick="changeColour(this)"></div>
+        <div class="colour" id="69" onclick="changeColour(this)"></div>
+        <div class="colour" id="70" onclick="changeColour(this)"></div>
+        <div class="colour" id="71" onclick="changeColour(this)"></div>
+        <div class="colour" id="72" onclick="changeColour(this)"></div>
+        <div class="colour" id="73" onclick="changeColour(this)"></div>
+        <div class="colour" id="74" onclick="changeColour(this)"></div>
+        <div class="colour" id="75" onclick="changeColour(this)"></div>
+        <div class="colour" id="76" onclick="changeColour(this)"></div>
+        <div class="colour" id="77" onclick="changeColour(this)"></div>
+        <div class="colour" id="78" onclick="changeColour(this)"></div>
+        <div class="colour" id="79" onclick="changeColour(this)"></div>
+        <div class="colour" id="80" onclick="changeColour(this)"></div>
+        <div class="colour" id="81" onclick="changeColour(this)"></div>
+        <div class="colour" id="82" onclick="changeColour(this)"></div>
+        <div class="colour" id="83" onclick="changeColour(this)"></div>
+        <div class="colour" id="84" onclick="changeColour(this)"></div>
+        <div class="colour" id="85" onclick="changeColour(this)"></div>
+        <div class="colour" id="86" onclick="changeColour(this)"></div>
+        <div class="colour" id="87" onclick="changeColour(this)"></div>
+        <div class="colour" id="88" onclick="changeColour(this)"></div>
+        <div class="colour" id="89" onclick="changeColour(this)"></div>
+        <div class="colour" id="90" onclick="changeColour(this)"></div>
+        <div class="colour" id="91" onclick="changeColour(this)"></div>
+        <div class="colour" id="92" onclick="changeColour(this)"></div>
+        <div class="colour" id="93" onclick="changeColour(this)"></div>
+        <div class="colour" id="94" onclick="changeColour(this)"></div>
+        <div class="colour" id="95" onclick="changeColour(this)"></div>
+        <div class="colour" id="96" onclick="changeColour(this)"></div>
+        <div class="colour" id="97" onclick="changeColour(this)"></div>
+        <div class="colour" id="98" onclick="changeColour(this)"></div>
+        <div class="colour" id="99" onclick="changeColour(this)"></div>
+        <div class="colour" id="100" onclick="changeColour(this)"></div>
+    </div>
+    
+</body>
+</html>
+

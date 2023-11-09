@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 40px;
+}
+.container {
+    display: grid;
+    height: 600px;
+    width: 600px;
+    gap: 2px;
+    border-color: black;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+
+.colour{
+    border: 2px solid black;
+    text-align:center;
+}

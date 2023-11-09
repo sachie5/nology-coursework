@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#272727;
+}
+
+a:visited,
+a:link{
+    color: #8a7baf;
+}
+
+#bold {
+    font-weight:bolder;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+main{
+    background-color: 	#dcdcdc;
+}
+
+#title { 
+    text-align: center;
+}
+
+#img-div{
+    background-color: white;
+}
+
+img{
+    width: 56em;
+}
+
+#img-caption {
+    text-align:center;
+    font-size: 0.9em;
+}
+
+#img-info {
+    display: flex;
+}
+
+#achievementlist, #quote {
+    justify-content: center;
+    padding: 40px 180px 20px 180px;
+
+}
+
+#quote{
+    font-size: 16px;
+    font-style: italic;
+    padding-top: 0;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+ul {
+    font-size: 16px;
+}
+
+.more-info{
+    text-align: center;
+    font-size: 18px;
+}
+
